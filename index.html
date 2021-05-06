@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <script src="../Nhan-09.5/Javascript/Calculator.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <div class="bg-primary">
+        <h1>Bảng tính</h1>
+    </div>
+
+    <div class="menuContainer">
+        <div>
+            <label for="Numbera">Nhập số x</label>
+            <input type="number" id="numberx"><br>
+            <label for="Numberb">Nhập số y</label>
+            <input type="number" id="numbery" value=8><br>
+        </div>
+        <div>
+            <button id="Sum" onclick="count(this.id)"> Tính tổng </button>
+            <button id="Minus" onclick="count(this.id)"> Tính hiệu </button>
+            <button id="Multiply" onclick="count(this.id)"> Tính nhân </button>
+            <button id="Divide" onclick="count(this.id)"> Tính chia </button>
+        </div>
+        <div>
+            <p id="ResultNumber"></p>
+        </div>
+
+
+        <div>
+            <h1 class="bg-secondary">Bai tap 13.5</h1>
+            <div>
+                <label for="math">Môn Toán</label>
+                <input type="Number" id="Math"><br>
+                <label for="physical">Môn Lý</label>
+                <input type="Number" id="Physical"><br>
+                <label for="chemical">Môn hoá</label>
+                <input type="Number" id="Chemical"><br>
+                <label for="Toan">Môn Anh Văn</label>
+                <input type="Number" id="English"><br>
+                <p>Kết quả của học viên</p>
+                <button id="countAverage" onclick="Score()">Tính kết quả trung bình</button>
+                <h3 id="Average"></h3>
+                <h3 id="typeStudent"></h3>
+            </div>
+
+            <div>
+                <h1 class="bg-success">bài tập 2 13.5</h1>
+                <div>
+                    <label for="Student">Tên chiến binh</label>
+                    <select name="Student" id="Student">
+                        <option value="Loc" selected>Loc</option>
+                        <option value="Hien">Hien</option>
+                        <option value="Nhan">Nhan</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Điểm toán</h3>
+                        <label for="Math"> Chọn điểm</label>
+                        <select name="Math" id="Math">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Điểm Lý</h3>
+                        <label for="Physical"> Chọn điểm</label>
+                        <select name="Physical" id="Physical">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Điểm hoa</h3>
+                        <label for="Chemical"> Chọn điểm</label>
+                        <select name="Chemical" id="Chemical">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Điểm English</h3>
+                        <label for="English"> Chọn điểm</label>
+                        <select name="English" id="English">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="Container">
+                    <h2>In ra bảng điểm: </h2>
+                    <button id="printScore" onclick="printStudent()"> Tính điểm </button>
+                    <h3 id="nameStudent"></h3>
+                    <h3 id="resultScore"></h3>
+                    <h3 id="typeStudent"></h3>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
